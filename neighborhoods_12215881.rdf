@@ -1,0 +1,959 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/benjamin/ontologies/2026/3/untitled-ontology-12/"
+     xml:base="http://www.semanticweb.org/benjamin/ontologies/2026/3/untitled-ontology-12/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:neighborhoods_12215881="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#">
+    <owl:Ontology rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#contains">
+        <owl:inverseOf rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#located-in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity">
+        <owl:inverseOf rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-amenity-of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-resident -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-resident">
+        <owl:inverseOf rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#lives-in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-amenity-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-amenity-of"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-near -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-near">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-owned-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-owned-by">
+        <owl:inverseOf rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#owns"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-rented-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-rented-by">
+        <owl:inverseOf rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#rents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#lives-in -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#lives-in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#located-in -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#located-in"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#owns"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#rents -->
+
+    <owl:ObjectProperty rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#rents"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Amenity -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Amenity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#School"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-owned-by"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-owned-by"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#located-in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DualUse"/>
+                            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Building -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Building">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DualUse"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Industrial"/>
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#located-in"/>
+                <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DesirableApartment -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DesirableApartment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#located-in"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialNeighborhood"/>
+                                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WellLocatedNeighborhood"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DualUse -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DualUse"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#FamilyNeighborhood -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#FamilyNeighborhood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#School"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Industrial -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Industrial"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Landlord -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Landlord">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Owner"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#owns"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeasedApartment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeasedApartment -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeasedApartment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-rented-by"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Owner -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Owner">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#owns"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#lives-in"/>
+                <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialNeighborhood -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialNeighborhood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#contains"/>
+                                <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Industrial"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#School -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#School"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Tenant -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Tenant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#lives-in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeasedApartment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#UrbanNeighborhood -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#UrbanNeighborhood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WellLocatedNeighborhood"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WellLocatedNeighborhood -->
+
+    <owl:Class rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WellLocatedNeighborhood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity"/>
+                                <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#is-near"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#has-amenity"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Alice">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+        <neighborhoods_12215881:lives-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt1"/>
+        <neighborhoods_12215881:rents rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AlteDonau -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AlteDonau">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ambiente22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ambiente22">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt1">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+        <neighborhoods_12215881:located-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCResidential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt2">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+        <neighborhoods_12215881:located-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DanubeFlats"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt3">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+        <neighborhoods_12215881:located-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SoVieSo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt4">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apartment"/>
+        <neighborhoods_12215881:located-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AresTower -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AresTower">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AuPark -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AuPark">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#BipaDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#BipaDC">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Bob">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+        <neighborhoods_12215881:owns rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Campanile -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Campanile">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Cape10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Cape10">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Charlie -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Charlie">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+        <neighborhoods_12215881:lives-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt3"/>
+        <neighborhoods_12215881:owns rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCResidential -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCResidential">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCTower -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCTower">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DanubeFlats -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DanubeFlats">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Dave -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Dave">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Person"/>
+        <neighborhoods_12215881:lives-in rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt4"/>
+        <neighborhoods_12215881:owns rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Denito -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Denito">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DonauCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DonauCity">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AresTower"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCResidential"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCTower"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DanubeFlats"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#UNOCity"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AlteDonau"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#BipaDC"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Denito"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Donaupark"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ikaze"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Kaisermuehlen"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#PalmersDC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Donaupark -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Donaupark">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Fasanviertel -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Fasanviertel">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+        <neighborhoods_12215881:is-near rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Sonnenwendviertel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-Pastinakweg -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-Pastinakweg">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#School"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-SWQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-SWQ">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#School"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hauptbahnhof -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hauptbahnhof">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#HelmutZilkPark -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#HelmutZilkPark">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Park"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hirschstetten -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hirschstetten">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ambiente22"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House1"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House2"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AuPark"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Campanile"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-Pastinakweg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House1">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House2">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ikaze -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ikaze">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Kaisermuehlen -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Kaisermuehlen">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeBurger">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Mariahilf -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Mariahilf">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeBurger"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neubaugasse"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#NikeMH"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Spear"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TKMaxxMH"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WeekdayMH"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Zieglergasse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neubaugasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neubaugasse">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#NikeMH -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#NikeMH">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#PalmersDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#PalmersDC">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Prizeotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Prizeotel">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SoVieSo -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SoVieSo">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Sonnenwendviertel -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Sonnenwendviertel">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neighborhood"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Cape10"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Prizeotel"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SoVieSo"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SunQuarter"/>
+        <neighborhoods_12215881:contains rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TheMetropolitan"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-SWQ"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hauptbahnhof"/>
+        <neighborhoods_12215881:has-amenity rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#HelmutZilkPark"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Spear -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Spear">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Restaurant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SunQuarter -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SunQuarter">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TKMaxxMH -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TKMaxxMH">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TheMetropolitan -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TheMetropolitan">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#ResidentialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#UNOCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#UNOCity">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#CommercialBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WeekdayMH -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WeekdayMH">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Shop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Zieglergasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Zieglergasse">
+        <rdf:type rdf:resource="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#MetroStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Alice"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AlteDonau"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ambiente22"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt1"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt2"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt3"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Apt4"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AresTower"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#AuPark"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#BipaDC"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Bob"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Campanile"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Cape10"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Charlie"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCResidential"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DCTower"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DanubeFlats"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Dave"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Denito"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#DonauCity"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Donaupark"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Fasanviertel"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-Pastinakweg"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#GTVS-SWQ"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hauptbahnhof"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#HelmutZilkPark"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Hirschstetten"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House1"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#House2"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Ikaze"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Kaisermuehlen"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#LeBurger"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Mariahilf"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Neubaugasse"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#NikeMH"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#PalmersDC"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Prizeotel"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SoVieSo"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Sonnenwendviertel"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Spear"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#SunQuarter"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TKMaxxMH"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#TheMetropolitan"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#UNOCity"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#WeekdayMH"/>
+            <rdf:Description rdf:about="http://www.kr.tuwien.ac.at/ontologies/2024S/neighborhoods_12215881.rdf#Zieglergasse"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
